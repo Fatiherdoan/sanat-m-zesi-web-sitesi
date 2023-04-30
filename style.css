@@ -1,0 +1,210 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Big Shoulders Display',sans sans-serif;
+}
+a {
+	text-decoration: none;
+}
+ul, li {
+	list-style: none;
+}
+.container {
+	width: 100%;
+	min-height: 100vh;
+	background: #fff;
+}
+.intro {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+}
+.leftSide{
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	max-width: 1220px;
+	height: 760px;
+	background: hsla(0, 0%, 8%, 1);
+}
+.leftSide img {
+	height: 760px;
+}
+.locationBtn {
+	position: relative;
+	display: flex;
+	left: -150px;
+	align-items: center;
+}
+.locationBtn a, span{
+	padding: 20px;
+} 
+.locationBtn a{
+	color: #fff;
+	font-weight: 900;
+	border-radius: 5px;
+	background: hsla(0, 0%, 8%, 1);
+}
+.locationBtn span { position: relative;
+ background-color: hsla(24, 56%, 63%, 1); 
+ left: 12%;
+
+
+}
+/*galery*/
+.galeryContainer > div  {
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.firstBox {
+	display: flex;
+}
+.firstBox > div {
+	margin: 15px;
+}
+.fText{
+	display: grid;
+	place-items: center;
+	height: 405px;
+	background: #ececec;
+}
+.fText:hover {
+	background-color: hsla(0, 0%, 8%, 1);
+	color: #fff;
+}
+.fText > h1, p {
+	margin: 20px;
+
+}
+.fText h1 {
+	font-size: 3.5rem;
+	width: 100%;
+	max-width: 400px;
+}
+.fText p {
+	position: relative;
+	top: -60px;
+	width: 100%;
+	max-width: 400px;
+	font-size: 1.3em;
+}
+.fImg img{
+	width: 100%;
+	max-width: 600px;
+	height: 400px;
+}
+/*second*/
+.secondBox > div {
+	margin: 15px;
+}
+.sImgFirst{
+	width: 100%;
+	max-width: 650px;
+	height: 600px;
+	background-image: url('https://art-gallery-website-rho.vercel.app/assets/desktop/image-grid-2@2x.jpg');
+	background-position: center;
+	background-size: 100% 100%;
+}
+.sImgSecond{
+	width: 100%;
+	max-width: 400px;
+	height: 300px;
+	background-image: url('https://art-gallery-website-rho.vercel.app/assets/desktop/image-grid-3@2x.jpg');
+	background-position: center;
+	background-size: 100% 100%;
+
+}
+.sText {
+	position: relative;
+	left: -20px;
+	display: grid;
+	place-items: center;
+	height: 285px;
+	color: #fff;
+	width: 100%;
+	max-width: 400px;
+	margin: 20px;
+	background: hsla(0, 0%, 8%, 1);
+}
+.sText h1 {
+	text-align: left;
+	width: 100%;
+	max-width: 250px;
+}
+.sText p {
+	width: 100%;
+	max-width: 250px;
+}
+.galeryContainer img, .sImgFirst, .sImgSecond {
+  filter: grayscale(100%);
+}
+img:hover, .sImgFirst:hover, .sImgSecond:hover {
+	transform: scale(1.1);
+	filter: grayscale(0%);
+}
+/*footer */
+footer {
+	position: relative;
+	bottom: 0;
+	background: hsla(0, 0%, 8%, 1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	min-height: 200px;
+	max-height: 800px;
+	font-weight: 900;
+}
+footer > div {
+	margin: 100px;
+}
+.footerH h2 {
+	width: 155px;
+}
+.footerText p {
+	width: 600px;
+	font-size: 1.08rem;
+	width: 360px;
+}
+.icon ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.icon ul li a {
+	padding: 10px;
+	background: #fff;
+	color: hsla(0, 0%, 8%, 1);
+	border-radius: 50%;
+	margin: 5px;
+}
+
+/*responsive*/
+
+
+/*footer*/
+@media screen and (max-width: 1260px) {
+	.locationBtn {
+		position: relative;
+		left: 0;
+		margin: 10px;
+	}
+	.firstBox {
+		position: relative;
+		top: 200px;
+	}
+	footer, .intro{
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+@media screen and (max-width: 1040px) {
+	footer {
+		position: relative;
+		top: 600px;
+	}
+}
